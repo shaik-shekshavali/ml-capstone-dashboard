@@ -1,5 +1,9 @@
 # Loan Prediction Dashboard
 
+**Live demo:** https://loan-prediction-shavali.streamlit.app
+
+> Open the link, choose **Bank Loan Approval Prediction**, and upload the `train.csv` file from the Kaggle Loan Prediction dataset to reproduce the results below.
+
 A Streamlit web app that trains and evaluates machine learning models on the Kaggle Loan Prediction dataset. Users can upload the data, compare models, save the best one, and predict on new applicants.
 
 ## Features
