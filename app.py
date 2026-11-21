@@ -44,7 +44,10 @@ def roc_fig(fpr, tpr, auc):
 with st.sidebar:
     st.header("1. Choose a project")
     project = st.selectbox(
-        "Project", list(mc.PROJECTS), format_func=lambda k: mc.PROJECTS[k]["title"]
+        "Project",
+        list(mc.PROJECTS),
+        index=1,  # 0 = Heart Disease, 1 = Bank Loan Approval, 2 = Mall Customers
+        format_func=lambda k: mc.PROJECTS[k]["title"],
     )
     cfg = mc.PROJECTS[project]
     st.caption(f"Dataset: {cfg['dataset']}")
